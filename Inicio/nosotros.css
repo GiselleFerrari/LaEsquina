@@ -1,0 +1,382 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/Imagenes/Fondo/bg.webp);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, serif;    
+}
+
+
+/* Abro HEADER */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+.nav-form {
+    display: flex;
+    margin: auto;   
+}
+
+.nav-form_input {
+    border-radius: 6px 0 0 6px;
+    border: solid;
+    border-color: #000;
+    background: rgba(237, 237, 237);
+}
+
+.buscador {
+    background-color: #007D51;
+    padding: 5px;
+    margin: auto;
+    border-radius: 0 6px 6px 0;
+    border: solid;
+    border-color: orangered;
+
+}
+
+.logo {
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.botonera {
+    display: -webkit-inline-box;
+    margin: auto;
+}
+
+.boton {
+    /* margin: 10px; */
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    background: rgba(237, 237, 237);
+    border-radius: 30px;
+    padding: 10px;
+    margin: auto;
+    border: solid;
+    border-color: #007d51;
+}
+
+
+/* Abro ENCABEZADO */
+
+.encabezado {
+    display: flex;
+    justify-content: center;
+    background-color: #EDDACA;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+
+/* ESTILOS GENERALES DEL MENU - Se aplican a todos los niveles*/
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    line-height: 3rem;
+    position: relative;
+}
+
+.menu ul {
+    position: absolute;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 3px 36em;
+    text-decoration: none;
+    transition: .4s;
+}
+
+nav a:hover {
+    color: white;
+    background: rgba(0,0,0,.5);
+    border-radius: 30px;
+}
+
+/* PRIMER NIVEL - Se aplican solamente a los Item*/
+.menu {
+    background:rgba(237, 237, 237);
+    display: table;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    max-width: 1200px;
+    border-radius: 30px;
+    border: ridge;
+        border-top-color: currentcolor;
+        border-right-color: currentcolor;
+        border-bottom-color: currentcolor;
+        border-left-color: currentcolor;
+    border-color: forestgreen;
+}
+
+.menu > li {
+    float: left;
+}
+
+/* SEGUNDO NIVEL - Se aplican solamente a los Subitem*/
+nav li li {
+    background: #7b7b7b;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .6s;
+    width: 200px;
+}
+
+nav li li a {
+    color: white;
+}
+
+nav li:hover >ul > li {
+    max-height: 1000px;
+    overflow: visible;
+}
+
+.menu > li > ul {
+    top: 100%;
+}
+
+/* TERCER NIVEL - Se aplican solamente a los Sub subitem*/
+
+.menu ul ul {
+    left: 100%;
+    top: 0;
+}
+
+nav li li li {
+    transition: all -.6s;
+}
+
+
+/* Abro CONTENIDO */
+
+.contenido {
+    max-width: 1200px;
+    /* background-color: rgb(219, 217, 190); */
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    transform: scale(1);
+    border-radius: 30px;
+}
+
+.texto {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 31px;
+    border-radius: 30px;
+    
+
+    background: rgba(206,202,191,0.75);
+    background: -moz-linear-gradient(-45deg, rgba(206,202,191,0.75) 0%, rgba(163,164,161,0.81) 23%, rgba(154,153,158,0.88) 53%, rgba(83,71,65,0.98) 92%, rgba(83,71,65,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(206,202,191,0.75)), color-stop(23%, rgba(163,164,161,0.81)), color-stop(53%, rgba(154,153,158,0.88)), color-stop(92%, rgba(83,71,65,0.98)), color-stop(100%, rgba(83,71,65,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(206,202,191,0.75) 0%, rgba(163,164,161,0.81) 23%, rgba(154,153,158,0.88) 53%, rgba(83,71,65,0.98) 92%, rgba(83,71,65,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(206,202,191,0.75) 0%, rgba(163,164,161,0.81) 23%, rgba(154,153,158,0.88) 53%, rgba(83,71,65,0.98) 92%, rgba(83,71,65,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(206,202,191,0.75) 0%, rgba(163,164,161,0.81) 23%, rgba(154,153,158,0.88) 53%, rgba(83,71,65,0.98) 92%, rgba(83,71,65,1) 100%);
+    background: linear-gradient(135deg, rgba(206,202,191,0.75) 0%, rgba(163,164,161,0.81) 23%, rgba(154,153,158,0.88) 53%, rgba(83,71,65,0.98) 92%, rgba(83,71,65,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cecabf', endColorstr='#534741', GradientType=1 );
+}
+
+#retrato {
+    width: 300px;
+    height: auto;
+    border: 2px solid black;
+    clip-path: circle(137px at center);
+    -webkit-box-shadow: 10px 10px 16px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 16px -5px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 16px -5px rgba(0,0,0,0.75);    
+}
+
+
+
+/* Abro FOOTER */
+
+.footer-items hr {
+    width: 50%;
+    margin-left: 0px;
+}
+
+.footer {
+    position: inherit;
+    bottom: 0px;
+}
+
+.footer-items {
+    display: flex;
+    background:rgba(237, 237, 237);
+    border: solid;
+    border-color: #007D51;
+}
+
+.footer-items .box {
+    flex-basis: 50%;
+    padding-left: 20px;
+}
+
+.one h1 {
+    margin-left: 5px;
+}
+
+.box h1 {
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.box .content {
+    margin: 22px 0px 11px 0px;
+}
+
+.box .content p {
+    font-size: 16.1px;
+    text-align: justify;
+}
+
+.box .content .readmore button {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 35px;
+    cursor: pointer;
+    background: #007D51;
+    border: 1px solid #111;
+    border-radius: 15px;
+}
+
+.box .content .readmore button:hover {
+    color: black;
+    background: silver;
+    transition: .5s;
+}
+
+.two .content .fas {
+    background: #fe5332;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: .4s;
+    cursor: pointer;
+    color: white;
+}
+
+.two .content .fas:hover {
+    background: #007d51;
+    color: white;
+    transition: .4s;
+}
+
+.two .content .phone {
+    margin: 5px 0px;
+}
+
+.two .content .whatsApp {
+    margin: 5px 0px;
+}
+
+.three .content a span {
+    background: #fe5332;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    line-height: 50px;
+    text-align: center;
+    margin: 10px 15px 10px 0px;
+}
+
+.three .content a span:hover {
+    background: #007d51;
+    color: white;
+    transition: .5s;
+}
+
+.four .text, .four .msg {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 2px;
+    color: rgb(0, 0, 0);
+}
+
+.four form input {
+    height: 20px;
+}
+
+.four form input, .four form textarea {
+    width: 95%;
+    background: #ffffff;
+    padding-left: 10px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    border: 1px solid #222222;
+    transition: .4s;
+}
+
+textarea {
+    width: 95%;
+}
+
+.four button {
+    width: 95%;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    height: 37px;
+    background: #007D51;
+    border-radius: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.four button:hover {
+    background: silver;
+    color: black;
+    transition: .5s;
+}
+
+.end p {
+    width: 100%;
+    line-height: 50%;
+    text-align: center;
+}
+
+.end .gf {
+    color: red;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+@media  screen and (max-width:788px) {
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+
+    .footer-items {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
