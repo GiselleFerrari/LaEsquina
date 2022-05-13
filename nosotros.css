@@ -4,7 +4,7 @@
 
 body {
     background-image: url(/Imagenes/Fondo/bg.webp);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, serif;    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, serif;
 }
 
 
@@ -13,7 +13,7 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: center;    
+    justify-content: center;
 }
 
 .contenedor {
@@ -24,7 +24,7 @@ header {
 
 .nav-form {
     display: flex;
-    margin: auto;   
+    margin: auto;
 }
 
 .nav-form_input {
@@ -183,16 +183,39 @@ nav li li li {
     font-size: 20px;
     line-height: 31px;
     border-radius: 30px;
-    
 
-    background: rgba(206,202,191,0.75);
-    background: -moz-linear-gradient(-45deg, rgba(206,202,191,0.75) 0%, rgba(163,164,161,0.81) 23%, rgba(154,153,158,0.88) 53%, rgba(83,71,65,0.98) 92%, rgba(83,71,65,1) 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(206,202,191,0.75)), color-stop(23%, rgba(163,164,161,0.81)), color-stop(53%, rgba(154,153,158,0.88)), color-stop(92%, rgba(83,71,65,0.98)), color-stop(100%, rgba(83,71,65,1)));
-    background: -webkit-linear-gradient(-45deg, rgba(206,202,191,0.75) 0%, rgba(163,164,161,0.81) 23%, rgba(154,153,158,0.88) 53%, rgba(83,71,65,0.98) 92%, rgba(83,71,65,1) 100%);
-    background: -o-linear-gradient(-45deg, rgba(206,202,191,0.75) 0%, rgba(163,164,161,0.81) 23%, rgba(154,153,158,0.88) 53%, rgba(83,71,65,0.98) 92%, rgba(83,71,65,1) 100%);
-    background: -ms-linear-gradient(-45deg, rgba(206,202,191,0.75) 0%, rgba(163,164,161,0.81) 23%, rgba(154,153,158,0.88) 53%, rgba(83,71,65,0.98) 92%, rgba(83,71,65,1) 100%);
-    background: linear-gradient(135deg, rgba(206,202,191,0.75) 0%, rgba(163,164,161,0.81) 23%, rgba(154,153,158,0.88) 53%, rgba(83,71,65,0.98) 92%, rgba(83,71,65,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cecabf', endColorstr='#534741', GradientType=1 );
+    background: rgb(234,255,239);
+    background: linear-gradient(120deg, rgba(234,255,239,0.6907095601912641) 24%, 
+    rgba(128,178,140,0.6234826694349616) 53%, rgba(255,157,98,0.6206815489867823) 93%); 
+
+    /* background: rgb(234,255,239); */
+    /* background: linear-gradient(120deg, rgba(234,255,239,0.6907095601912641) 33%, 
+    rgba(128,178,140,0.6234826694349616) 53%, rgba(255,157,98,0.6206815489867823) 93%);  */
+
+    /* background: rgb(234,255,239); */
+    /* background: linear-gradient(120deg, rgba(234,255,239,0.917600316493785) 33%, 
+    rgba(128,178,140,0.7439308487066701) 65%, rgba(255,157,98,0.7075162828803396) 100%);  */
+
+    /* background: rgb(234,255,239); */
+    /* background: radial-gradient(circle, rgba(234,255,239,0.917600316493785) 32%, 
+    rgba(255,157,98,0.5198412128523284) 52%, rgba(128,178,140,0.7439308487066701) 80%, rgba(255,157,98,0.7075162828803396) 100%); */
+
+    /* background: rgb(234,255,239); */
+    /* background: radial-gradient(circle, rgba(234,255,239,0.917600316493785) 16%, 
+    rgba(128,178,140,0.7439308487066701) 55%, rgba(255,157,98,0.7075162828803396) 100%);  */
+
+    /* background: rgb(255,248,236); */
+    /* background: linear-gradient(120deg, rgba(255,248,236,0.7971521372220763) 21%, 
+    rgba(163,238,181,0.8167599803593313) 62%, rgba(255,157,98,0.7075162828803396) 100%);  */
+
+    /* background: rgb(255,248,236); */
+    /* background: radial-gradient(circle, rgba(255,248,236,0.9344070391828606) 14%, 
+    rgba(163,238,181,0.9540148823201156) 54%, rgba(255,157,98,0.9428104005273985) 100%);  */
+
+    /* background: rgb(255,248,236); */
+    /* background: linear-gradient(120deg, rgba(255,248,236,0.9344070391828606) 14%, 
+    rgba(163,238,181,0.9540148823201156) 54%, rgba(255,157,98,0.9428104005273985) 100%);  */
+    
 }
 
 #retrato {
@@ -202,7 +225,7 @@ nav li li li {
     clip-path: circle(137px at center);
     -webkit-box-shadow: 10px 10px 16px -5px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 16px -5px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 16px -5px rgba(0,0,0,0.75);    
+    box-shadow: 10px 10px 16px -5px rgba(0,0,0,0.75);
 }
 
 
