@@ -256,12 +256,4 @@ nav li li li {
     border-color: #007d51;
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
-        &:hover {
-            color: white;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 30px;
-        }
-        @media (max-width: 370px) {
-            font-size: 18px;
-        }
 }

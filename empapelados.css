@@ -162,3 +162,26 @@ nav li:hover >ul > li {
 nav li li li {
     transition: all -.6s;
 }
+
+
+/* Botonera */
+
+.buttom-cont{
+    margin-left: auto;
+    display: block;
+    padding: 8px 0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background: rgba(237, 237, 237);
+    display: inline-block;
+    padding: 0 3.093em;
+    text-decoration: none;
+    transition: .4s;
+    line-height: 3rem;
+    position: relative;
+    border: solid;
+    border-radius: 30px;
+    border-color: #007d51;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
