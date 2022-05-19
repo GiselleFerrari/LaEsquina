@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/Imagenes/Fondo/bg.webp);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, serif;    
+}
+
+
+/* Abro HEADER */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+.nav-form {
+    display: flex;
+    margin: auto;   
+}
+
+.nav-form_input {
+    border-radius: 6px 0 0 6px;
+    border: solid;
+    border-color: #000;
+    background: rgba(237, 237, 237);
+}
+
+.buscador {
+    background-color: #007D51;
+    padding: 5px;
+    margin: auto;
+    border-radius: 0 6px 6px 0;
+    border: solid;
+    border-color: orangered;
+
+}
+
+.logo {
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.botonera {
+    display: -webkit-inline-box;
+    margin: auto;
+}
+
+.boton {
+    /* margin: 10px; */
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    background: rgba(237, 237, 237);
+    border-radius: 30px;
+    padding: 10px;
+    margin: auto;
+    border: solid;
+    border-color: #007d51;
+}
+
+
+/* Abro ENCABEZADO */
+
+.encabezado {
+    display: flex;
+    justify-content: center;
+    background-color: #EDDACA;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+
+/* ESTILOS GENERALES DEL MENU - Se aplican a todos los niveles*/
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    line-height: 3rem;
+    position: relative;
+}
+
+.menu ul {
+    position: absolute;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 3px 1.03em;
+    text-decoration: none;
+    transition: .4s;
+}
+
+nav a:hover {
+    color: white;
+    background: rgba(0,0,0,.5);
+    border-radius: 30px;
+}
+
+/* PRIMER NIVEL - Se aplican solamente a los Item*/
+.menu {
+    background:rgba(237, 237, 237);
+    display: table;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    max-width: 1200px;
+    border-radius: 30px;
+    border: ridge;
+        border-top-color: currentcolor;
+        border-right-color: currentcolor;
+        border-bottom-color: currentcolor;
+        border-left-color: currentcolor;
+    border-color: forestgreen;
+}
+
+.menu > li {
+    float: left;
+}
+
+/* SEGUNDO NIVEL - Se aplican solamente a los Subitem*/
+nav li li {
+    background: #7b7b7b;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .6s;
+    width: 200px;
+}
+
+nav li li a {
+    color: white;
+}
+
+nav li:hover >ul > li {
+    max-height: 1000px;
+    overflow: visible;
+}
+
+.menu > li > ul {
+    top: 100%;
+}
+
+/* TERCER NIVEL - Se aplican solamente a los Sub subitem*/
+
+.menu ul ul {
+    left: 100%;
+    top: 0;
+}
+
+nav li li li {
+    transition: all -.6s;
+}  
+
+
+/*Abro Contenedor de contactos*/
+
+
+.bloque-imagen{
+    display: -webkit-inline-box;  
+    background: fixed border-box url(/Imagenes/Fondo/bg.webp) top 25% left 50%/cover;
+    height: 100%;
+    width: 100%;
+        @media (max-width: 900px) {
+            background: fixed border-box url(/Imagenes/Fondo/bg.webp) top 25% left 50%/cover;
+        }
+        @media (max-width: 767px) {
+            background: fixed border-box url(/Imagenes/Fondo/bg.webp) top 25% left 50%/cover;
+        }
+        @media (max-width: 370px) {
+            background: fixed border-box url(/Imagenes/Fondo/bg.webp);
+        }
+}
+
+.contenedor {
+    color: rgb(0, 0, 0);
+    padding: 1vw;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+    text-align: center;
+            
+        & h2{
+        filter: grayscale(10%);
+        border-radius: 30px;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-size: 45px;
+        text-shadow: 3px 5px 4px rgb(156, 156, 156);
+            @media (max-width: 370px) {
+                font-size: 32px;
+                border-radius: 39px;
+                }
+        }
+
+        & form{
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 40px;        
+        }
+
+        @media (max-width: 900px) {
+            font-size: 20px;         
+        }
+        @media (max-width: 370px) {
+            padding: 1vw;
+        }
+
+}
+
+.cont-items{
+    display: block;
+    margin-bottom: 2.5vw;
+    border-radius: 1vw;
+    height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#box-comment{
+    width: 50vw;
+    height: 15vw;
+    min-width: 190px; 
+}
+
+.cont-large{
+    width: 50vw;
+    min-width: 190px;
+}
+
+.buttom-cont{
+    margin-left: auto;
+    display: block;
+    padding: 8px 0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background: rgba(237, 237, 237);
+    display: inline-block;
+    padding: 0 3.093em;
+    text-decoration: none;
+    transition: .4s;
+    line-height: 3rem;
+    position: relative;
+    border: solid;
+    border-radius: 30px;
+    border-color: #007d51;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+        &:hover {
+            color: white;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 30px;
+        }
+        @media (max-width: 370px) {
+            font-size: 18px;
+        }
+}

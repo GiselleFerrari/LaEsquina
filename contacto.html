@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="empapelados.css">
+    <link rel="stylesheet" href="contacto.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&family=Parisienne&display=swap" rel="stylesheet"> 
-    <title>EMPAPELADOS MURESCO</title>
+    <title>CONTACTO</title>
 </head>
 
+
 <body>
-    
+
     <header>
 
         <div class="contenedor">
@@ -33,7 +34,7 @@
 
             <div class="botonera">
                 <div class="boton">
-                    <a href="contacto.html">CONTACTENOS</a>
+                    <a href="#">CONTACTENOS</a>
                 </div>
             </div>
            
@@ -157,6 +158,40 @@
             <li><a href="nosotros.html">NOSOTROS</a></li>
         </ul>
     </nav>
+
+
+    <!-- Abro Contenedor de contactos -->
+
+    
+    <div class="bloque-imagen">
+        <div class="contenedor">
+            <h2>CONTACTO</h2>
+            <form name="contact">
+
+                <label >
+                    Nombre:
+                    <input class="cont-items cont-large" type="text" placeholder="Coloque su nombre" required="">
+                </label>
+                <label >
+                    E-mail ✉:
+                    <input class="cont-items cont-large" type="email" placeholder="Coloque su E-mail" required="">
+                </label>               
+                <label >
+                    Comentarios:
+                    <textarea class="cont-items" id="box-comment" placeholder="Comentarios..." required=""></textarea>
+                </label>
+
+                <br>
+
+                <div class="cont-items">
+                    <input class="buttom-cont" type="submit" value="Enviar">
+                    <input class="buttom-cont" type="reset" value="Limpiar">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
 
 </body>
 </html>
