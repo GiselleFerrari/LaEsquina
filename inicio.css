@@ -119,10 +119,6 @@ nav a:hover {
     max-width: 1200px;
     border-radius: 30px;
     border: ridge;
-        border-top-color: currentcolor;
-        border-right-color: currentcolor;
-        border-bottom-color: currentcolor;
-        border-left-color: currentcolor;
     border-color: forestgreen;
 }
 
